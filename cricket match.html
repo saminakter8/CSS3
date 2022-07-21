@@ -1,0 +1,119 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bat, Ball animation</title>
+    <style>
+        .field {
+            border: 2px solid green;
+        }
+
+        .bat {
+            height: 500px;
+            transition: transform .3s ease 0.4s;
+
+        }
+
+        .ball {
+
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 25px;
+            position: relative;
+            bottom: 80px;
+            left: 73px;
+            transition: transform 0.3s linear 0.4s;
+        }
+
+        .field:hover .ball {
+            transform: translate(900px, -200px);
+        }
+
+        .field:hover .bat {
+            transform: rotate(-45deg);
+            transform-origin: top right;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <div><img class="bat" src="pictures/Bat.jpg" alt="MRF Bat"></div>
+        <div class="ball"></div>
+    </div>
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Match</title>
+    <style>
+        .field {
+            border: 1px solid;
+        }
+
+
+
+        .bat {
+            height: 500px;
+            transition: transform 0.3s ease 0.3s;
+
+        }
+
+        #ball {
+            height: 50px;
+            width: 50px;
+            border: 1px solid rgb(156, 10, 10);
+            border-radius: 25px;
+            background-color: rgb(156, 10, 10);
+            position: relative;
+            left: 70px;
+            top: -65px;
+            transition: transform 0.3s ease-out 0.3s;
+        }
+
+        /* .ball {
+            height: 50px;
+            width: 50px;
+            position: relative;
+            bottom: 50px;
+            left: 60px;
+            transition: transform 0.3s ease-out 0.3s;
+        } */
+
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+
+        .field:hover .ball {
+            transform: translate(600px, -200px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <div id="bat">
+            <img class="bat" src="pictures/Bat.jpg" alt="MRF bat">
+        </div>
+        <div id="ball" class="ball">
+            <!-- <img class="ball" src="pictures/ball.jpg" alt="Ball"> -->
+        </div>
+    </div>
+</body>
+
+</html>
